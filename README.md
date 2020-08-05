@@ -2,6 +2,25 @@
 
 ![alt text](https://raw.githubusercontent.com/blk-io/epirus-free/master/images/Contracts.png "Epirus Free")
 
+[Install Docker Compose](https://docs.docker.com/compose/install/)  
+[更新 WSL 2 Linux 核心](https://docs.microsoft.com/zh-tw/windows/wsl/wsl2-kernel)  
+
+## Usage
+
+```bash
+    environment:
+      - NODE_ENDPOINT=${NODE_ENDPOINT}
+    environment:
+      - NODE_ENDPOINT=http://192.168.1.107:28545
+```
+
+```bash
+docker-compose pull
+docker-compose up
+```
+
+http://localhost/dashboard
+
 ## Introduction
 
 This dockerized environment is designed for viewing private 

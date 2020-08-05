@@ -3,7 +3,7 @@ services:
   api:
     image: web3labs/epirus-free-api:latest
     environment:
-      - NODE_ENDPOINT=${NODE_ENDPOINT}
+      - NODE_ENDPOINT=http://192.168.1.107:28545
       - MONGO_CLIENT_URI=mongodb://mongodb:27017
       - REINDEX_ENDPOINT=http://ingestion/reindex/
       - MONGO_DB_NAME=epirus
@@ -32,7 +32,7 @@ services:
   ingestion:
     image: web3labs/epirus-free-ingestion:latest
     environment:
-      - NODE_ENDPOINT=${NODE_ENDPOINT}
+      - NODE_ENDPOINT=http://192.168.1.107:28545
       - MONGO_CLIENT_URI=mongodb://mongodb:27017
       - MONGO_DB_NAME=epirus
     depends_on:
