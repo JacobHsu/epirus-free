@@ -21,6 +21,21 @@ docker-compose up
 
 http://localhost/dashboard
 
+## Note
+
+[docker cp](https://docs.docker.com/engine/reference/commandline/cp/)
+
+`docker ps`
+
+[NAMES]
+web3labs/epirus-free-web:latest 
+epirus-free_web_1
+
+`docker cp epirus-free_web_1:/app .`
+docker cp epirus-free_web_1:/app /app
+
+docker cp README.md epirus-free_web_1:/app
+
 ## Introduction
 
 This dockerized environment is designed for viewing private 
